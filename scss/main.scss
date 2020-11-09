@@ -83,7 +83,7 @@ html {
 body {
   font-size: 1.6rem;
   font-family: 'Rubik', sans-serif;
-  background-color: $darkGrayishViolet;
+  // background-color: $grayishBlue;
 }
 
 .content {
@@ -96,6 +96,18 @@ body {
 }
 .hero {
   flex: 65%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-container {
+  width: 60%;
+}
+
+.title {
+  font-size: 3rem;
+  margin-bottom: 2rem;
 }
 
 .phone {
@@ -105,6 +117,7 @@ body {
   border: 10px solid $white;
   border-radius: 15px;
   background-color: $lightGrayishViolet;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
 }
 
 .header {
@@ -188,12 +201,17 @@ body {
 }
 
 .price {
-  width: 80%;
+  width: 70%;
   background: linear-gradient(to left, $lightMagenta, $lightViolet);
   margin-bottom: 1rem;
   padding: 1rem;
   font-size: 1.2rem;
   display: flex;
+  margin-left: 1rem;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  color: $white;
 }
 
 .input {
@@ -222,6 +240,27 @@ body {
   top: 1rem;
 }
 
+.left-pattern {
+  position: absolute;
+  width: 30%;
+  height: 80vh;
+  background-color: $paleViolet;
+  z-index: -2;
+  border-bottom-right-radius: 50rem;
+  border-bottom-left-radius: 50rem;
+}
+
+.right-pattern {
+  position: absolute;
+  width: 30%;
+  height: 80vh;
+  background-color: $paleViolet;
+  z-index: -2;
+  border-top-right-radius: 50rem;
+  border-top-left-radius: 50rem;
+  bottom: 0;
+  right: 0;
+}
 .attribution {
   font-size: 11px;
   text-align: center;

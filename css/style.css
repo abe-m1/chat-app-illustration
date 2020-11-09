@@ -33,8 +33,7 @@ html {
 
 body {
   font-size: 1.6rem;
-  font-family: 'Rubik', sans-serif;
-  background-color: #a39daa; }
+  font-family: 'Rubik', sans-serif; }
 
 .content {
   width: 70%;
@@ -45,7 +44,17 @@ body {
   align-items: center; }
 
 .hero {
-  flex: 65%; }
+  flex: 65%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.hero-container {
+  width: 60%; }
+
+.title {
+  font-size: 3rem;
+  margin-bottom: 2rem; }
 
 .phone {
   flex: 35%;
@@ -53,7 +62,8 @@ body {
   width: 35rem;
   border: 10px solid white;
   border-radius: 15px;
-  background-color: #f5f3f7; }
+  background-color: #f5f3f7;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2); }
 
 .header {
   width: 100%;
@@ -128,12 +138,17 @@ body {
   margin-left: auto; }
 
 .price {
-  width: 80%;
+  width: 70%;
   background: linear-gradient(to left, #e942ff, #8838ff);
   margin-bottom: 1rem;
   padding: 1rem;
   font-size: 1.2rem;
-  display: flex; }
+  display: flex;
+  margin-left: 1rem;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  color: white; }
 
 .input {
   width: 90%;
@@ -156,6 +171,26 @@ body {
   position: relative;
   left: 1rem;
   top: 1rem; }
+
+.left-pattern {
+  position: absolute;
+  width: 30%;
+  height: 80vh;
+  background-color: #d89eff;
+  z-index: -2;
+  border-bottom-right-radius: 50rem;
+  border-bottom-left-radius: 50rem; }
+
+.right-pattern {
+  position: absolute;
+  width: 30%;
+  height: 80vh;
+  background-color: #d89eff;
+  z-index: -2;
+  border-top-right-radius: 50rem;
+  border-top-left-radius: 50rem;
+  bottom: 0;
+  right: 0; }
 
 .attribution {
   font-size: 11px;
