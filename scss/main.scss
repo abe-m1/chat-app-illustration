@@ -109,11 +109,12 @@ body {
   font-size: 3rem;
   margin-bottom: 2rem;
 }
-
-.phone {
+.phone-container {
   flex: 35%;
-  height: 80vh;
-  width: 35rem;
+}
+.phone {
+  height: 64vh;
+  width: 25rem;
   border: 10px solid $white;
   border-radius: 15px;
   background-color: $lightGrayishViolet;
@@ -122,7 +123,7 @@ body {
 
 .header {
   width: 100%;
-  height: 8rem;
+  height: 7rem;
   background: linear-gradient(to left, $lightMagenta, $lightViolet);
   position: relative;
   border-top-left-radius: 10px;
@@ -132,8 +133,8 @@ body {
 
 .header:before {
   content: '';
-  width: 50%;
-  height: 3rem;
+  width: 60%;
+  height: 2rem;
   background-color: $white;
   position: absolute;
   top: 0;
@@ -146,7 +147,7 @@ body {
 
 .header-content {
   display: flex;
-  padding-top: 4rem;
+  padding-top: 3rem;
 }
 
 .avatar {
@@ -161,11 +162,11 @@ body {
   color: $white;
 }
 .user-name {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: 700;
 }
 .user-status {
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .images {
@@ -174,27 +175,27 @@ body {
   margin-bottom: 1rem;
 }
 .image {
-  width: 5rem;
+  width: 4.5rem;
   margin-right: 1rem;
   border-radius: 5px;
 }
 
 .message-sender {
-  font-size: 1.2rem;
+  font-size: 0.8rem;
   width: 60%;
   background-color: $paleViolet;
   margin-bottom: 1rem;
-  padding: 1rem;
+  padding: 0.7rem;
   margin-left: 1rem;
   border-radius: 5px;
 }
 
 .message-receiver {
-  font-size: 1.2rem;
+  font-size: 0.8rem;
   width: 60%;
   background-color: $white;
   margin-bottom: 1rem;
-  padding: 1rem;
+  padding: 0.7rem;
   margin-right: 1rem;
   border-radius: 5px;
   margin-left: auto;
@@ -220,6 +221,7 @@ body {
   // padding: 1rem;
   border-radius: 10rem;
   display: relative;
+  margin-left: 1rem;
 }
 
 .input:after {
@@ -230,7 +232,7 @@ body {
   border-radius: 4rem;
   background-color: black;
   position: relative;
-  left: 26rem;
+  left: 17rem;
   top: -1rem;
 }
 
