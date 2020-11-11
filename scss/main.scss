@@ -93,6 +93,11 @@ body {
   height: 100vh;
   justify-content: center;
   align-items: center;
+
+  @include respond(phone) {
+    display: block;
+    width: 100%;
+  }
 }
 .hero {
   flex: 65%;
@@ -103,22 +108,46 @@ body {
 
 .hero-container {
   width: 60%;
+
+  @include respond(phone) {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+  }
 }
 
 .title {
-  font-size: 3rem;
+  font-size: 4.2rem;
   margin-bottom: 2rem;
+  font-weight: 500;
+  color: $veryDarkDesaturatedViolet;
+}
+
+.hero-text {
+  font-size: 1.9rem;
+  line-height: 1.6;
+  color: $grayishBlue;
 }
 .phone-container {
   flex: 35%;
+
+  @include respond(phone) {
+    flex: none;
+    padding-top: 10rem;
+    margin-bottom: 6rem;
+  }
 }
 .phone {
-  height: 64vh;
-  width: 25rem;
+  height: 56rem;
+  width: 28rem;
   border: 10px solid $white;
   border-radius: 15px;
   background-color: $lightGrayishViolet;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+
+  @include respond(phone) {
+    margin: auto;
+  }
 }
 
 .header {
@@ -246,10 +275,16 @@ body {
   position: absolute;
   width: 30%;
   height: 80vh;
-  background-color: $paleViolet;
+  background: linear-gradient(to bottom, $lightMagenta, $lightViolet);
   z-index: -2;
   border-bottom-right-radius: 50rem;
   border-bottom-left-radius: 50rem;
+
+  @include respond(phone) {
+    left: -8rem;
+    width: 67%;
+    height: 63vh;
+  }
 }
 
 .right-pattern {
@@ -262,6 +297,13 @@ body {
   border-top-left-radius: 50rem;
   bottom: 0;
   right: 0;
+  opacity: 0.14;
+
+  @include respond(phone) {
+    width: 56%;
+    height: 48vh;
+    bottom: -29px;
+  }
 }
 .attribution {
   font-size: 11px;
