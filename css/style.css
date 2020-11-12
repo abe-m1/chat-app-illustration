@@ -18,13 +18,13 @@ a {
 
 html {
   font-size: 62.5%; }
-  @media (max-width: 600px) {
+  @media (min-width: 600px) {
     html {
       font-size: 50%; } }
-  @media (max-width: 1200px) {
+  @media (min-width: 1200px) {
     html {
       font-size: 50%; } }
-  @media (max-width: 900px) {
+  @media (min-width: 900px) {
     html {
       font-size: 56.25%; } }
   @media (min-width: 1800px) {
@@ -36,16 +36,16 @@ body {
   font-family: 'Rubik', sans-serif; }
 
 .content {
-  width: 70%;
-  margin: auto;
-  display: flex;
-  height: 100vh;
-  justify-content: center;
-  align-items: center; }
-  @media (max-width: 600px) {
+  display: block;
+  width: 100%;
+  height: 100vh; }
+  @media (min-width: 900px) {
     .content {
-      display: block;
-      width: 100%; } }
+      width: 70%;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center; } }
 
 .hero {
   flex: 65%;
@@ -54,12 +54,12 @@ body {
   align-items: center; }
 
 .hero-container {
-  width: 60%; }
-  @media (max-width: 600px) {
+  width: 90%;
+  margin: auto;
+  text-align: center; }
+  @media (min-width: 900px) {
     .hero-container {
-      width: 90%;
-      margin: auto;
-      text-align: center; } }
+      width: 60%; } }
 
 .title {
   font-size: 4.2rem;
@@ -73,23 +73,21 @@ body {
   color: #c6cacd; }
 
 .phone-container {
-  flex: 35%; }
-  @media (max-width: 600px) {
+  flex: none;
+  padding-top: 10rem;
+  margin-bottom: 6rem; }
+  @media (min-width: 900px) {
     .phone-container {
-      flex: none;
-      padding-top: 10rem;
-      margin-bottom: 6rem; } }
+      flex: 35%; } }
 
 .phone {
+  margin: auto;
   height: 56rem;
   width: 28rem;
   border: 10px solid white;
   border-radius: 15px;
   background-color: #f5f3f7;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2); }
-  @media (max-width: 600px) {
-    .phone {
-      margin: auto; } }
 
 .header {
   width: 100%;
@@ -201,34 +199,34 @@ body {
 
 .left-pattern {
   position: absolute;
-  width: 30%;
-  height: 80vh;
+  left: -8rem;
+  width: 67%;
+  height: 63vh;
   background: linear-gradient(to bottom, #e942ff, #8838ff);
   z-index: -2;
   border-bottom-right-radius: 50rem;
   border-bottom-left-radius: 50rem; }
-  @media (max-width: 600px) {
+  @media (min-width: 900px) {
     .left-pattern {
-      left: -8rem;
-      width: 67%;
-      height: 63vh; } }
+      width: 30%;
+      height: 80vh; } }
 
 .right-pattern {
   position: absolute;
-  width: 30%;
-  height: 80vh;
+  width: 56%;
+  height: 48vh;
+  bottom: -29px;
   background-color: #d89eff;
   z-index: -2;
   border-top-right-radius: 50rem;
   border-top-left-radius: 50rem;
-  bottom: 0;
   right: 0;
   opacity: 0.14; }
-  @media (max-width: 600px) {
+  @media (min-width: 900px) {
     .right-pattern {
-      width: 56%;
-      height: 48vh;
-      bottom: -29px; } }
+      width: 30%;
+      height: 80vh;
+      bottom: 0; } }
 
 .attribution {
   font-size: 11px;
