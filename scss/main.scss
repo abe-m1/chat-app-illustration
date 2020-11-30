@@ -40,6 +40,9 @@ $lightGrayishViolet: hsl(270, 20%, 96%);
 $veryDarkDesaturatedViolet: hsl(271, 36%, 24%);
 $veryLightMagenta: hsl(289, 100%, 72%);
 
+$senderBackground: #ede5f4;
+$receiverText: #8e43cd;
+
 //mixins
 @mixin respond($breakpoint) {
   @if $breakpoint == big-desktop {
@@ -88,7 +91,6 @@ html {
 body {
   font-size: 1.6rem;
   font-family: 'Rubik', sans-serif;
-  // background-color: $grayishBlue;
   overflow-x: hidden;
 }
 
@@ -205,7 +207,6 @@ body {
 }
 .user-status {
   font-size: 0.9rem;
-  // color: $lightGrayishViolet;
   color: #d59fff;
 }
 
@@ -237,9 +238,9 @@ body {
   margin-left: 1rem;
   border-radius: 5px;
 
-  background-color: #ede5f4;
+  background-color: $senderBackground;
   border-radius: 12px 12px 12px 2px;
-  color: #8e43cd;
+  color: $senderText;
 }
 
 .message-receiver {
@@ -270,7 +271,6 @@ body {
 .input {
   width: 90%;
   background-color: $white;
-  // padding: 1rem;
   border-radius: 10rem;
   position: relative;
   margin-left: 1rem;
